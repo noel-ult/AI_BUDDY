@@ -1,0 +1,48 @@
+2026-03-21 11:16:41,252 | WARNING | invalid_action_response | error=Missing or invalid 'action' | raw={
+"actions": [
+  {
+    "type": "find_file",
+    "description": "Search for specific file in directory"
+  }
+]
+}
+2026-03-21 11:18:50,127 | WARNING | invalid_action_response | error='find_file' requires non-empty string parameter 'filename' | raw={
+  "action": "find_file",
+  "file_name": "OS textbook"
+}
+2026-03-21 11:21:14,232 | WARNING | invalid_action_response | error='find_file' requires non-empty string parameter 'filename' | raw={"action": "find_file"}
+2026-03-21 11:28:56,527 | WARNING | invalid_action_response | error=AI response JSON must be an object | raw=[{"action": "find_file", "params": {"file_type": "PPT", "search_query": "set theory"}}]
+2026-03-21 11:30:58,954 | WARNING | invalid_action_response | error='find_file' requires non-empty string parameter 'filename' | raw={
+  "action": "find_file",
+  "target": "laptop"
+}
+2026-03-21 11:34:31,163 | WARNING | invalid_action_response | error='find_file' requires non-empty string parameter 'filename' | raw={
+"action": "find_file",
+"data": {
+"path": "/path/to/searched/file.txt"
+}
+}
+2026-03-21 12:13:04,024 | INFO | suggested_action | action=find_file | parameters={}
+2026-03-21 12:13:04,025 | INFO | execution_result | action=find_file | success=False | result={"success": false, "error": "find_file_function() missing 1 required positional argument: 'filename'"}
+2026-03-21 12:16:29,875 | INFO | suggested_action | action=find_file | parameters={}
+2026-03-21 12:16:29,876 | INFO | execution_result | action=find_file | success=False | result={"success": false, "error": "find_file_function() missing 1 required positional argument: 'filename'"}
+2026-03-21 12:19:44,578 | INFO | suggested_action | action=find_file | parameters={}
+2026-03-21 12:23:18,008 | WARNING | invalid_action_response | error=Missing or invalid 'action' | raw={"actions": ["find_file", {"filename": "set theory.ppt"}]}
+2026-03-21 12:24:44,548 | WARNING | invalid_action_response | error=Missing or invalid 'action' | raw={"actions": ["find_file", "read_file"], 
+"parameters": {"filename": "in documents"}}
+2026-03-21 12:36:34,623 | INFO | suggested_action | action=find_file | parameters={"filename": "Set Theory PPT"}
+2026-03-21 12:36:34,641 | INFO | execution_result | action=find_file | success=True | result={"success": true, "action": "find_file", "query": "Set Theory PPT", "matches": [], "allowed_roots": ["C:\\Users\\ACER\\Documents", "C:\\Users\\ACER\\Downloads"]}
+2026-03-21 21:57:02,171 | INFO | suggested_action | action=none | parameters={}
+2026-03-21 21:58:32,169 | INFO | suggested_action | action=none | parameters={}
+2026-03-21 22:00:41,658 | INFO | suggested_action | action=none | parameters={}
+2026-03-21 22:04:05,698 | WARNING | invalid_action_response | error=Missing or invalid 'action' | raw={"actions": ["none"]}
+2026-03-21 22:06:21,972 | INFO | suggested_action | action=none | parameters={}
+2026-03-21 22:11:22,005 | INFO | suggested_action | action=none | parameters={}
+2026-03-21 22:14:16,839 | INFO | suggested_action | action=none | parameters={}
+2026-03-21 22:17:24,119 | INFO | suggested_action | action=none | parameters={}
+2026-03-21 22:20:38,165 | INFO | suggested_action | action=none | parameters={}
+2026-03-21 22:24:21,862 | WARNING | invalid_action_response | error=Missing or invalid 'action' | raw={"actions": ["find_file", "read_file", "none"]}
+2026-04-04 10:03:33,078 | INFO | suggested_action | action=none | parameters={}
+2026-04-04 10:04:20,081 | WARNING | invalid_action_response | error=Missing or invalid 'action' | raw={"actions": [{"action": "find_file", "parameters": {"filename": "economics_report"}}]}
+2026-04-04 10:05:22,236 | INFO | suggested_action | action=find_file | parameters={"filename": "economics report"}
+2026-04-04 10:05:22,267 | INFO | execution_result | action=find_file | success=True | result={"success": true, "action": "find_file", "query": "economics report", "matches": [], "match_details": [], "allowed_roots": ["C:\\Users\\ACER\\Documents", "C:\\Users\\ACER\\Downloads"]}

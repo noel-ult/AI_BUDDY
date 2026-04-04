@@ -1,0 +1,17 @@
+# AI Buddy — Python dependencies
+# Install with:  pip install -r requirements.txt
+
+# Ollama Python client — connects Python to the local Ollama server
+ollama>=0.2.0
+
+# Rich — beautiful terminal UI (tables, panels, syntax highlighting, Markdown)
+rich>=13.7.0
+
+# psutil — system metrics (CPU, RAM, disk, network, processes)
+psutil>=5.9.0
+
+# pypdf — PDF text extraction (optional, needed for PDF summarization)
+pypdf>=4.0.0
+
+# plyer — cross-platform desktop notifications (Windows toast popups for reminders)
+plyer>=2.1.0
