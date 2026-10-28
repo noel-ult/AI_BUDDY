@@ -1,7 +1,6 @@
 # AI_BUDDY source reference
 
-
-Source reviewed: [`55e829654d06`](https://github.com/noel-ult/AI_BUDDY/commit/55e829654d06cb6e0a3b784edd0aada8637459d7).
+Source reviewed: [`0e6dbd406da0`](https://github.com/noel-ult/AI_BUDDY/commit/0e6dbd406da0f30b7b80822de8c529ddda64df3a).
 
 This reference records the checked-in source, scripts, configuration names, and route declarations. It is a navigation aid; service availability and successful test execution require separate verification.
 
@@ -9,6 +8,9 @@ This reference records the checked-in source, scripts, configuration names, and 
 
 Historical plans/reports describe their own revision; use current source when they disagree.
 
+- [CONTRIBUTING.md](../CONTRIBUTING.md)
+- [README.md](../README.md)
+- [docs/REFERENCE.md](../docs/REFERENCE.md)
 - [requirements.txt](../requirements.txt)
 
 ## Source and configuration map
